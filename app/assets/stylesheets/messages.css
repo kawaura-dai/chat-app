@@ -12,13 +12,42 @@
   background-color:#253141;
   height: 100px;
   padding:0px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.side_up_left a{
+  font-size: 16px;
+  color: #fafafa;
+  text-decoration: none;
+}
+
+.side_up_right{
+  font-size: 10px;
+}
+
+.side_up_right a{
+ border: 1px solid lightblue;
+ padding: 14px;
+ text-decoration:none;
+ color: deepskyblue;
 }
 
 .side_down{
   background-color:#2f3e51;
   height: calc(100vh - 100px);
   padding:0px 20px;
+  overflow: scroll;
+}
+
+.room{
+  padding: 20px 0 40px;
+}
+
+.room_name a{
+  text-decoration: none;
+  color: white;
 }
 
 .chat{
