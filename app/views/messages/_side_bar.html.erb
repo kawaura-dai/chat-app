@@ -1,20 +1,20 @@
-<div class="side_up">
-  <div class="side_up_left">
+<div class="side-bar-header">
+  <div class="header-name">
     <%= link_to edit_user_path(current_user) do %>
       <%= current_user.name %>
     <% end %>
   </div>
-  <div class="side_up_right">
+  <div class="create-room">
     <%= link_to "チャットを作成する", new_room_path %>
   </div>
 </div>
 
-<div class="side_down">
-  <% current_user.rooms.each do |room| %>
+<div class="rooms">
+ <% current_user.rooms.each do |room| %>
     <div class="room">
-      <div class="room_name">
-        <%= link_to room.name, room_messages_path(room) %>
+      <div class="room-name">
+       <%= link_to room.name, room_messages_path(room) 
       </div>
     </div>
   <% end %>
-</div>
+  </div>
